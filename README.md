@@ -18,6 +18,18 @@ npm start
 
 4. In browser visit http://localhost:3000
 
+5. Alternatively, you can preview the application at the following URL:
+
+```
+https://mp3.nbzch.cn:8001/
+```
+
+## Preview Video
+
+You can watch a 27-second preview video of the application here:
+
+[Preview Video](https://mp3.nbzch.cn:8001/preview.mp4)
+
 ## Important Notes
 
 - This application requires HTTP server to run, can't be opened from file system
@@ -45,6 +57,18 @@ npm start
 ```
 
 4. 在浏览器中访问 http://localhost:3000
+
+5. 您也可以在以下网址预览应用程序：
+
+```
+https://mp3.nbzch.cn:8001/
+```
+
+## 预览视频
+
+您可以在此处观看应用程序的27秒预览视频：
+
+[预览视频](https://mp3.nbzch.cn:8001/preview.mp4)
 
 ## 注意事项
 
