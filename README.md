@@ -1,6 +1,7 @@
 ## 功能说明：
 一个前端网页，实现mp3音频合并。网页上有一个框，拖入本地文件夹后实现每个子文件夹中的MP3文件都列出，可以通过拖动排序，点击合并按钮，mp3按照拖动后的顺序合并成一个mp3并以该子文件夹命名。
-![image](https://github.com/user-attachments/assets/f62e6a38-d888-48e9-8f97-90cd9d94654b)
+![image](https://github.com/user-attachments/assets/d197b396-0109-4cb8-9c1b-9f5e0e3d3450)
+
 
 chinese:
 ## MP3文件按子文件夹合并
