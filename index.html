@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Folder Merger</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SortableJS for drag-and-drop reordering -->
+    <script src="Sortable.min.js"></script>
+    <!-- FFmpeg.wasm for MP3 merging -->
+    <script src="ffmpeg.min.js"></script>
+    <!-- 确保ffmpeg-core.js和ffmpeg-core.wasm在ffmpeg.min.js之后加载 -->
+    <script src="ffmpeg-core.js"></script>
+    <script>
+        // 确保ffmpeg-core.wasm已正确加载
+        window.onload = function() {
+            // 检查是否已经加载了FFmpeg
+            if (typeof FFmpeg !== 'undefined') {
+                console.log('FFmpeg script loaded successfully');
+            } else {
+                console.error('FFmpeg script failed to load');
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>MP3 Folder Merger</h1>
+        
+        <div class="dropzone" id="folder-dropzone">
+            <div class="dropzone-content">
+                <p>Drag & Drop Folders Here</p>
+                <p>or</p>
+                <input type="file" id="folder-input" webkitdirectory directory multiple />
+                <label for="folder-input" class="button">Select Folders</label>
+            </div>
+        </div>
+
+        <div class="browser-compatibility">
+            <p><strong>Note:</strong> This application works best in Chrome. Firefox and Safari may require additional permissions.</p>
+        </div>
+
+        <div id="processing-indicator" class="hidden">
+            <div class="spinner"></div>
+            <p>Processing folders...</p>
+        </div>
+
+        <div id="folders-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
